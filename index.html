@@ -23,7 +23,7 @@
             <nav class="nav-container">
                 <a class="logo link" href="./index.html">Web<span class="logo-studio">Studio</span></a>
                 <ul class="list nav-list-container">
-                    <li><a class="nav-links link" href="./index.html">Studio</a></li>
+                    <li><a class="nav-links link active" href="./index.html">Studio</a></li>
                     <li><a class="nav-links link" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="nav-links link" href="">Contacts</a></li>
                 </ul>
@@ -44,7 +44,7 @@
             <div class="container hero-container">
                 <h1 class="main-title main-title-container">Effective Solutions
                     for Your Business</h1>
-                <button class="main-button main-button-container" type="button">Order Service</button>
+                <button class="main-button main-button-container" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -332,6 +332,19 @@
         </div>
 
     </footer>
+
+    <!-- Modal Window -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-btn" type="button" data-modal-close>
+                <svg class="modal-icon" width="8px" height="8px">
+                    <use href="./images/icons.svg#x-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 
 </body>
 
